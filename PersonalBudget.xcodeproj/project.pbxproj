@@ -15,6 +15,11 @@
 		CBD95FE91F48FCCF009861EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBD95FE71F48FCCF009861EC /* LaunchScreen.storyboard */; };
 		CBD95FF41F48FCCF009861EC /* PersonalBudgetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD95FF31F48FCCF009861EC /* PersonalBudgetTests.swift */; };
 		CBD95FFF1F48FCCF009861EC /* PersonalBudgetUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD95FFE1F48FCCF009861EC /* PersonalBudgetUITests.swift */; };
+		CBD960241F48FD7D009861EC /* SQLite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBD960171F48FD44009861EC /* SQLite.framework */; };
+		CBD960251F48FD84009861EC /* SQLite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBD960171F48FD44009861EC /* SQLite.framework */; };
+		CBD960261F48FD84009861EC /* SQLite.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CBD960171F48FD44009861EC /* SQLite.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CBD9602B1F491436009861EC /* AddExpenseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD9602A1F491436009861EC /* AddExpenseViewController.swift */; };
+		CBD9602D1F491930009861EC /* AddIncomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD9602C1F491930009861EC /* AddIncomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,7 +37,77 @@
 			remoteGlobalIDString = CBD95FD81F48FCCF009861EC;
 			remoteInfo = PersonalBudget;
 		};
+		CBD960161F48FD44009861EC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CBD9600C1F48FD44009861EC /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EE247AD31C3F04ED00AE3E12;
+			remoteInfo = "SQLite iOS";
+		};
+		CBD960181F48FD44009861EC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CBD9600C1F48FD44009861EC /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EE247ADD1C3F04ED00AE3E12;
+			remoteInfo = "SQLiteTests iOS";
+		};
+		CBD9601A1F48FD44009861EC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CBD9600C1F48FD44009861EC /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EE247B3C1C3F3ED000AE3E12;
+			remoteInfo = "SQLite Mac";
+		};
+		CBD9601C1F48FD44009861EC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CBD9600C1F48FD44009861EC /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EE247B451C3F3ED000AE3E12;
+			remoteInfo = "SQLiteTests Mac";
+		};
+		CBD9601E1F48FD44009861EC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CBD9600C1F48FD44009861EC /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 03A65E5A1C6BB0F50062603F;
+			remoteInfo = "SQLite tvOS";
+		};
+		CBD960201F48FD44009861EC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CBD9600C1F48FD44009861EC /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 03A65E631C6BB0F60062603F;
+			remoteInfo = "SQLiteTests tvOS";
+		};
+		CBD960221F48FD44009861EC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CBD9600C1F48FD44009861EC /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A121AC451CA35C79005A31D1;
+			remoteInfo = "SQLite watchOS";
+		};
+		CBD960271F48FD84009861EC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CBD9600C1F48FD44009861EC /* SQLite.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = EE247AD21C3F04ED00AE3E12;
+			remoteInfo = "SQLite iOS";
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CBD960291F48FD84009861EC /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				CBD960261F48FD84009861EC /* SQLite.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		CBD95FD91F48FCCF009861EC /* PersonalBudget.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PersonalBudget.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -49,6 +124,9 @@
 		CBD95FFA1F48FCCF009861EC /* PersonalBudgetUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PersonalBudgetUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBD95FFE1F48FCCF009861EC /* PersonalBudgetUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalBudgetUITests.swift; sourceTree = "<group>"; };
 		CBD960001F48FCCF009861EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CBD9600C1F48FD44009861EC /* SQLite.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SQLite.xcodeproj; path = "../SQLite.swift-master/SQLite.xcodeproj"; sourceTree = "<group>"; };
+		CBD9602A1F491436009861EC /* AddExpenseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddExpenseViewController.swift; sourceTree = "<group>"; };
+		CBD9602C1F491930009861EC /* AddIncomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddIncomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +134,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBD960251F48FD84009861EC /* SQLite.framework in Frameworks */,
+				CBD960241F48FD7D009861EC /* SQLite.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +163,7 @@
 				CBD95FF21F48FCCF009861EC /* PersonalBudgetTests */,
 				CBD95FFD1F48FCCF009861EC /* PersonalBudgetUITests */,
 				CBD95FDA1F48FCCF009861EC /* Products */,
+				CBD9600C1F48FD44009861EC /* SQLite.xcodeproj */,
 			);
 			sourceTree = "<group>";
 		};
@@ -106,6 +187,8 @@
 				CBD95FE51F48FCCF009861EC /* Assets.xcassets */,
 				CBD95FE71F48FCCF009861EC /* LaunchScreen.storyboard */,
 				CBD95FEA1F48FCCF009861EC /* Info.plist */,
+				CBD9602A1F491436009861EC /* AddExpenseViewController.swift */,
+				CBD9602C1F491930009861EC /* AddIncomeViewController.swift */,
 			);
 			path = PersonalBudget;
 			sourceTree = "<group>";
@@ -128,6 +211,20 @@
 			path = PersonalBudgetUITests;
 			sourceTree = "<group>";
 		};
+		CBD9600D1F48FD44009861EC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CBD960171F48FD44009861EC /* SQLite.framework */,
+				CBD960191F48FD44009861EC /* SQLiteTests iOS.xctest */,
+				CBD9601B1F48FD44009861EC /* SQLite.framework */,
+				CBD9601D1F48FD44009861EC /* SQLiteTests Mac.xctest */,
+				CBD9601F1F48FD44009861EC /* SQLite.framework */,
+				CBD960211F48FD44009861EC /* SQLiteTests tvOS.xctest */,
+				CBD960231F48FD44009861EC /* SQLite.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -138,10 +235,12 @@
 				CBD95FD51F48FCCF009861EC /* Sources */,
 				CBD95FD61F48FCCF009861EC /* Frameworks */,
 				CBD95FD71F48FCCF009861EC /* Resources */,
+				CBD960291F48FD84009861EC /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				CBD960281F48FD84009861EC /* PBXTargetDependency */,
 			);
 			name = PersonalBudget;
 			productName = PersonalBudget;
@@ -221,6 +320,12 @@
 			mainGroup = CBD95FD01F48FCCF009861EC;
 			productRefGroup = CBD95FDA1F48FCCF009861EC /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = CBD9600D1F48FD44009861EC /* Products */;
+					ProjectRef = CBD9600C1F48FD44009861EC /* SQLite.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				CBD95FD81F48FCCF009861EC /* PersonalBudget */,
@@ -229,6 +334,58 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		CBD960171F48FD44009861EC /* SQLite.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SQLite.framework;
+			remoteRef = CBD960161F48FD44009861EC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		CBD960191F48FD44009861EC /* SQLiteTests iOS.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "SQLiteTests iOS.xctest";
+			remoteRef = CBD960181F48FD44009861EC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		CBD9601B1F48FD44009861EC /* SQLite.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SQLite.framework;
+			remoteRef = CBD9601A1F48FD44009861EC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		CBD9601D1F48FD44009861EC /* SQLiteTests Mac.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "SQLiteTests Mac.xctest";
+			remoteRef = CBD9601C1F48FD44009861EC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		CBD9601F1F48FD44009861EC /* SQLite.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SQLite.framework;
+			remoteRef = CBD9601E1F48FD44009861EC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		CBD960211F48FD44009861EC /* SQLiteTests tvOS.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "SQLiteTests tvOS.xctest";
+			remoteRef = CBD960201F48FD44009861EC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		CBD960231F48FD44009861EC /* SQLite.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SQLite.framework;
+			remoteRef = CBD960221F48FD44009861EC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		CBD95FD71F48FCCF009861EC /* Resources */ = {
@@ -262,7 +419,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBD9602D1F491930009861EC /* AddIncomeViewController.swift in Sources */,
 				CBD95FE11F48FCCF009861EC /* SecondViewController.swift in Sources */,
+				CBD9602B1F491436009861EC /* AddExpenseViewController.swift in Sources */,
 				CBD95FDD1F48FCCF009861EC /* AppDelegate.swift in Sources */,
 				CBD95FDF1F48FCCF009861EC /* FirstViewController.swift in Sources */,
 			);
@@ -296,6 +455,11 @@
 			isa = PBXTargetDependency;
 			target = CBD95FD81F48FCCF009861EC /* PersonalBudget */;
 			targetProxy = CBD95FFB1F48FCCF009861EC /* PBXContainerItemProxy */;
+		};
+		CBD960281F48FD84009861EC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "SQLite iOS";
+			targetProxy = CBD960271F48FD84009861EC /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -415,6 +579,7 @@
 		CBD960041F48FCCF009861EC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = PersonalBudget/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -427,6 +592,7 @@
 		CBD960051F48FCCF009861EC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = PersonalBudget/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -509,6 +675,7 @@
 				CBD960051F48FCCF009861EC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CBD960061F48FCCF009861EC /* Build configuration list for PBXNativeTarget "PersonalBudgetTests" */ = {
 			isa = XCConfigurationList;
@@ -517,6 +684,7 @@
 				CBD960081F48FCCF009861EC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CBD960091F48FCCF009861EC /* Build configuration list for PBXNativeTarget "PersonalBudgetUITests" */ = {
 			isa = XCConfigurationList;
@@ -525,6 +693,7 @@
 				CBD9600B1F48FCCF009861EC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
