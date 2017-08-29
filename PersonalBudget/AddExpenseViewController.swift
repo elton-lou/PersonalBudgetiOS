@@ -4,7 +4,7 @@
 //
 //  Created by Elton Lou on 8/19/17.
 //  Copyright © 2017 eltonlou. All rights reserved.
-//
+// Test that version control works
 
 import UIKit
 
